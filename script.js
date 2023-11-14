@@ -146,15 +146,15 @@ function addToCart(fname){
     index=cartList.map((x)=>x.name).indexOf(fname)
     if (index==-1){
         let obj={
-            quntaty:parseInt(qty),
+            quntaty:parseFloat(qty),
             name:fname
         }
         // console.log(obj)
         cartList.push(obj)
     }else{
-        // let cureentQuntaty=parseInt(cartList[index].quntaty)
-        // let newQty=cureentQuntaty+parseInt(qty)
-        let newQty=cartList[index].quntaty+parseInt(qty)
+        // let cureentQuntaty=parseFloat(cartList[index].quntaty)
+        // let newQty=cureentQuntaty+parseFloat(qty)
+        let newQty=cartList[index].quntaty+parseFloat(qty)
         if(newQty<0)
             newQty=0
         cartList[index].quntaty=newQty

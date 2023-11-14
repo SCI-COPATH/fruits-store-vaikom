@@ -26,7 +26,8 @@
                     <span class="my_name">FruitVerse</span>
                     <!-- <span class="my_title">vaikom</span> -->
                     <form class="d-flex">
-                        <input class="form-control me-2 searchElement" type="search" placeholder="Search" aria-label="Search" onkeyup="search_flower()">
+                        <input class="form-control me-2 searchElement" type="search" placeholder="Search"
+                            aria-label="Search" onkeyup="search_flower()">
                         <!-- <i class="fa-solid fa-magnifying-glass fa-lg"></i> -->
                     </form>
                 </div>
@@ -48,14 +49,14 @@
                             aria-controls="navbarSupportedContent" aria-expanded="false">
                             <a class="nav-link" onclick="navivateLocation('#fruits')">Fruits</a>
                         </li>
-                        <li class="nav-item" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
+                        <!-- <li class="nav-item" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false">
                             <a class="nav-link" onclick="navivateLocation('#Exp')">Expertise</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item" data-bs-toggle="" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false">
-                            <a class="nav-link" onclick="navivateLocation('#contactUs')">Contact us</a>
+                            <a class="nav-link" onclick="navivateLocation('#aboutas')">About us</a>
                         </li>
                     </ul>
                 </div>
@@ -79,14 +80,18 @@
         <div class="inner  two">
             <div class="text">
                 <h1>Importent to eat fruit</h1>
-            <p>Eating fruits is crucial for maintaining optimal health as they are a powerhouse of essential nutrients.
-                Fruits provide a diverse range of vitamins, minerals, antioxidants, and dietary fiber, contributing to
-                the prevention of chronic diseases, supporting immune function, and promoting overall well-being. The
-                natural sugars in fruits offer a healthier alternative to processed sweets, while their high water
-                content helps with hydration. Incorporating a variety of fruits into your daily diet not only adds
-                delicious flavors but also ensures a well-rounded intake of nutrients necessary for sustained energy,
-                improved digestion, and a strengthened immune system. Including fruits in your diet is a simple and
-                enjoyable way to enhance your nutritional intake and foster a healthier lifestyle.</p>
+                <p>Eating fruits is crucial for maintaining optimal health as they are a powerhouse of essential
+                    nutrients.
+                    Fruits provide a diverse range of vitamins, minerals, antioxidants, and dietary fiber, contributing
+                    to
+                    the prevention of chronic diseases, supporting immune function, and promoting overall well-being.
+                    The
+                    natural sugars in fruits offer a healthier alternative to processed sweets, while their high water
+                    content helps with hydration. Incorporating a variety of fruits into your daily diet not only adds
+                    delicious flavors but also ensures a well-rounded intake of nutrients necessary for sustained
+                    energy,
+                    improved digestion, and a strengthened immune system. Including fruits in your diet is a simple and
+                    enjoyable way to enhance your nutritional intake and foster a healthier lifestyle.</p>
             </div>
             <div class="imgContiner">
                 <img src="./assets/fruts2.jpg" alt="images">
@@ -97,17 +102,91 @@
             <p>All best seller product are now available for you and your can buy this product
                 from here any time any where so sop now</p>
             <div class="bestProducts row">
-                
+
             </div>
         </div>
     </section>
     <section class="outer" id="fruits">
-        <div class="inner" >
+        <div class="inner">
             <h1>All Fruits</h1>
             <div class="row all-cards">
 
             </div>
         </div>
+    </section>
+    <!-- <section class="outer" id="cart">
+        <div class="inner">
+            <h2>Your cart</h2>
+            <table>
+                <tr>
+                    <th>Itom</th>
+                    <th>Quntaty</th>
+                    <th class="but-area"></th>
+                    <th class="but-area"></th>  
+                </tr>
+                
+            </table>
+
+        </div>
+    </section> -->
+
+    <section class="outer" id="aboutas">
+        <div class="inner">
+            <h1>About us</h1>
+            <h2>location</h2>
+            <div class="responsive-map">
+                <iframe src="https://maps.google.com/maps?q=9.750023%2C+76.390446&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+
+
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h1 class="mb-3">Any quary Fill the form</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="your-name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="your-name" name="your-name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="your-surname" class="form-label">Your Surname</label>
+                                    <input type="text" class="form-control" id="your-surname" name="your-surname"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="your-email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="your-email" name="your-email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="your-subject" class="form-label">Your Subject</label>
+                                    <input type="text" class="form-control" id="your-subject" name="your-subject">
+                                </div>
+                                <div class="col-12">
+                                    <label for="your-message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="your-message" name="your-message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button data-res="<?php echo $sum; ?>" type="submit"
+                                                class="btn btn-dark w-100 fw-bold">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
